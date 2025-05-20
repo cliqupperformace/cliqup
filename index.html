@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliqup - Marketing Digital que Entrega Resultados para seu Negócio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .whatsapp-bg {
+            background-color: #25D366;
+        }
+        
+        .primary-bg {
+            background-color: #ff6100;
+        }
+        
+        .primary-text {
+            color: #ff6100;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .fixed-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+        #logo{
+            width: 20%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold primary-text" id="logo">
+                        <a href="index.html"><img src="img/Cliqup_logo_abreviada-removebg-preview.png"></a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#servicos" class="text-gray-700 hover:primary-text">Serviços</a>
+                    <a href="#solucoes" class="text-gray-700 hover:primary-text">Soluções</a>
+                    <a href="#depoimentos" class="text-gray-700 hover:primary-text">Depoimentos</a>
+                    <a href="#contato" class="text-gray-700 hover:primary-text">Contato</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Cliqup: Seu Negócio no Topo do Digital</h1>
+                <p class="text-xl mb-8">Soluções personalizadas de marketing digital que aumentam sua visibilidade, geram leads qualificados e impulsionam suas vendas.</p>
+                <a href="https://wa.me/5561981535040?text=Quero%20virar%20refer%C3%AAncia%20local%20ainda%20este%20m%C3%AAs..." class="https://wa.me/5561981535040?text=Quero%20virar%20refer%C3%AAncia%20local%20ainda%20este%20m%C3%AAs...">
+                    <i id="orçamento"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Marketing Digital" class="rounded-lg shadow-xl w-full max-w-md floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-16">Seu Negócio Enfrenta Esses Desafios?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-search text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Não Aparece no Google</h3>
+                    <p class="text-gray-600">Seu site não aparece nas primeiras páginas de busca e você perde clientes para a concorrência.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Poucos Leads Qualificados</h3>
+                    <p class="text-gray-600">Suas campanhas não geram leads interessados e você não sabe como melhorar os resultados.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Vendas Estagnadas</h3>
+                    <p class="text-gray-600">Seu faturamento não cresce e você não consegue identificar os gargalos no seu funil de vendas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nossos Serviços</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">Soluções completas para alavancar seu negócio no digital</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-search-dollar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">SEO & Marketing de Conteúdo</h3>
+                    <p class="text-gray-600 mb-6">Posicionamos seu site no topo do Google com estratégias de conteúdo e otimização técnica.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Pesquisa de palavras-chave</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Conteúdo otimizado para SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Link building estratégico</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-ad text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Tráfego Pago</h3>
+                    <p class="text-gray-600 mb-6">Campanhas inteligentes no Google e Meta Ads que convertem visitantes em clientes.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Anúncios no Google e Facebook/Instagram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Segmentação precisa de público</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Otimização contínua para ROI</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md service-card transition duration-300">
+                    <div class="primary-text mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Landing Pages & Sites</h3>
+                    <p class="text-gray-600 mb-6">Desenvolvemos páginas de alta conversão que transformam visitantes em clientes.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Design responsivo e moderno</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Otimizadas para conversão</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Integração com ferramentas de marketing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solucoes" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Como Ajudamos Seu Negócio</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">Estratégias personalizadas que entregam resultados mensuráveis</p>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Estratégia" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4">Planejamento Estratégico</h3>
+                    <p class="text-gray-600 mb-6">Analisamos seu negócio, concorrência e público-alvo para desenvolver uma estratégia sob medida que atenda seus objetivos específicos.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Diagnóstico completo do seu marketing digital</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Definição de KPIs e metas realistas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Roadmap de implementação</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
+                    <h3 class="text-2xl font-semibold mb-4">Execução e Otimização</h3>
+                    <p class="text-gray-600 mb-6">Implementamos as estratégias e monitoramos continuamente os resultados, fazendo ajustes para maximizar seu retorno sobre investimento.</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Relatórios mensais transparentes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Ajustes baseados em dados</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle primary-text mt-1 mr-2"></i>
+                            <span>Reuniões trimestrais de alinhamento</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 mb-8 md:mb-0 order-1 md:order-2">
+                    <img src="img/Execução e Otimização.png" alt="Otimização" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gradient-to-r from-blue-800 to-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Por Que Escolher a Cliqup?</h2>
+            <p class="text-xl text-center mb-16 max-w-2xl mx-auto">Nosso diferencial no mercado de marketing digital</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Resultados Comprovados</h3>
+                    <p>Já ajudamos mais de 150 empresas brasileiras a aumentar suas vendas através do marketing digital.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Atendimento Personalizado</h3>
+                    <p>Cada cliente tem um consultor dedicado que conhece profundamente seu negócio e objetivos.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Estratégias Inovadoras</h3>
+                    <p>Utilizamos as técnicas mais atualizadas do mercado, testadas e adaptadas para o cenário brasileiro.</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Transparência Total</h3>
+                    <p>Relatórios claros e frequentes mostrando exatamente onde seu investimento está sendo aplicado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="depoimentos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">O Que Nossos Clientes Dizem</h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-2xl mx-auto">Resultados reais de empresas como a sua</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Em 6 meses com a Cliqup, nosso faturamento online aumentou 320%. Eles transformaram completamente nossa presença digital."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">RC</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Roberto Campos</h4>
+                            <p class="text-gray-500 text-sm">Diretor, Moda Estilo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Finalmente encontrei uma agência que entrega o que promete. Nosso tráfego orgânico aumentou 5x em um ano."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">AS</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Ana Souza</h4>
+                            <p class="text-gray-500 text-sm">CEO, Saúde Natural</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Reduzimos nosso custo por lead em 60% com as campanhas da Cliqup. O atendimento personalizado faz toda diferença."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                            <span class="text-blue-600 font-bold">LM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Luiz Mendes</h4>
+                            <p class="text-gray-500 text-sm">Gerente, AutoPeças Express</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-12 primary-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Pronto para Alavancar Seu Negócio?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Fale agora mesmo com nosso time pelo WhatsApp e receba uma proposta personalizada</p>
+            <a href="https://wa.me/5561981535040?text=Quero%20virar%20refer%C3%AAncia%20local%20ainda%20este%20m%C3%AAs..." class="bg-white primary-text font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 inline-block">
+                <i class="fab fa-whatsapp mr-2"></i> Falar no WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-r from-blue-800 to-blue-600 text-white p-10 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Entre em Contato</h2>
+                        <p class="mb-6">Preencha o formulário ao lado ou fale diretamente conosco pelo WhatsApp.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="mr-4 text-xl">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Telefone</h4>
+                                    <p>(61) 98153-5040</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="mr-4 text-xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p>cliquperformance@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="mr-4 text-xl">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Horário</h4>
+                                    <p>Seg-Sex: 9h-18h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nome*</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email*</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Telefone*</label>
+                                <input type="tel" id="phone" name="phone" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="business" class="block text-sm font-medium text-gray-700">Empresa*</label>
+                                <input type="text" id="business" name="business" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="services" class="block text-sm font-medium text-gray-700">Serviços de Interesse*</label>
+                                <select id="services" name="services" multiple class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="seo">SEO & Marketing de Conteúdo</option>
+                                    <option value="ads">Tráfego Pago</option>
+                                    <option value="landing">Landing Pages</option>
+                                    <option value="social">Redes Sociais</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensagem</label>
+                                <textarea id="message" name="message" rows="3" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            <div class="flex items-center">
+                                <input id="privacy" name="privacy" type="checkbox" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                <label for="privacy" class="ml-2 block text-sm text-gray-700">
+                                    Concordo com a <a href="#" class="text-blue-600 hover:text-blue-500">Política de Privacidade</a>
+                                </label>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full primary-bg text-white font-bold py-3 px-4 rounded-md hover:opacity-90 transition duration-300">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed WhatsApp Button -->
+    <div class="fixed-whatsapp">
+        <a href="https://wa.me/5561981535040?text=Quero%20virar%20refer%C3%AAncia%20local%20ainda%20este%20m%C3%AAs..." class="whatsapp-bg text-white text-2xl p-4 rounded-full shadow-lg hover:bg-green-500 transition duration-300 inline-block">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Cliqup</h3>
+                    <p class="text-gray-400">Marketing digital que entrega resultados reais para seu negócio.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">SEO & Conteúdo</a></li>
+                        <li><a href="#" class="hover:text-white">Tráfego Pago</a></li>
+                        <li><a href="#" class="hover:text-white">Landing Pages</a></li>
+                        <li><a href="#" class="hover:text-white">Redes Sociais</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-white">Cases</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Conecte-se</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/cliqup_performance/" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="text-gray-400">Assine nossa newsletter</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Seu email" class="px-3 py-2 bg-gray-700 text-white rounded-l focus:outline-none">
+                        <button class="primary-bg px-3 py-2 rounded-r"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Cliqup Performance. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            
+            // In a real implementation, you would send this data to your server
+            console.log('Form submitted:', { name, phone });
+            
+            // Show success message
+            alert(`Obrigado, ${name}! Entraremos em contato em breve no número ${phone}.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
